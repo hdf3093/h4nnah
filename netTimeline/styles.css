@@ -1,6 +1,18 @@
 /* button:hover{
     cursor: crosshair;
 }  */
+
+@font-face {
+    font-family: 'alte'; /* Give your font a name */
+    src: url('fonts/AlteHaasGroteskRegular.ttf') format('truetype'); 
+  }
+
+  @font-face {
+    font-family: 'script'; /* Give your font a name */
+    src: url('fonts/exmouth_.ttf') format('truetype'); 
+  }
+  
+
 body{
     background-color: black;
     margin:0;
@@ -13,14 +25,7 @@ body{
 }
 
 /* enter button */
-.enterbox{
-    height: 150px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 140px;
 
-}
 
 
 
@@ -110,29 +115,41 @@ h1 {
 }
 
 .enter-link {
-    text-decoration: underline;
     color: rgb(0, 255, 60); 
-    font-family: 'Papyrus', fantasy;
+    font-family: 'script',sans-serif;
+    font-size: 40px;;
 }
 
 .enter-link:visited {
-    text-decoration: underline;
-    color: rgb(255, 0, 234); 
-    font-family: 'Papyrus', fantasy;
+    color: rgb(253, 172, 245); 
+    font-family: 'script',sans-serif
+    font-size: 40px;;
 }
+
+
 .enter-link:hover {
-    text-decoration: underline;
     color: rgb(0, 76, 255); 
-    font-family: 'Papyrus', fantasy;
+    font-family: 'script',sans-serif
+    font-size: 40px;;
+
 }
-h1, h2 {
+h1, h2, h3 {
     position: relative;
     z-index: 2; /* Set a higher z-index for the text */
 }
 
+.bm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
 
 
-h2 {
+
+h2, h3 {
     display: block;
     font-size: 1.3em;
     margin-block-start: 0.67em;
@@ -140,6 +157,7 @@ h2 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+    text-align: center;
 }
 @keyframes glow{
     0% {
@@ -171,6 +189,15 @@ button{
 
 .text{
     padding-top: 30px;
+    font-family: alte, sans-serif
+}
+
+h3 {
+    font-family: script, sans-serif;
+    font-size: 80px;
+    margin: 0; /* Reset margin to remove any default margin */
+    padding: 0; /* Reset padding to remove any default padding */
+    line-height: 1; /* Adjust line-height as needed for spacing */
 }
 
 
@@ -179,4 +206,31 @@ button{
 
 
 
+
+
+@media screen and (max-width: 768px) {
+body{
+    margin:0;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+.content-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+
+
+.text{
+
+    padding-top: 5%;
+    padding-left:5%;
+    padding-right:5%;
+    font-size: smaller;
+
+
+}
 
