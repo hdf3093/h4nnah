@@ -1,6 +1,3 @@
-/* button:hover{
-    cursor: crosshair;
-}  */
 
 @font-face {
     font-family: 'alte'; /* Give your font a name */
@@ -14,7 +11,6 @@
   
 
 body{
-    background-color: black;
     margin:0;
 }
 
@@ -38,6 +34,14 @@ body{
     position: absolute;
     top: 10%;
     left: 76%;
+}
+
+
+#webtogglediv img{
+    padding-top:20px;
+    padding-left:20px;
+
+
 }
 
 .rightimages {
@@ -68,6 +72,10 @@ body{
     
 
 
+}
+
+#clickImage{
+    cursor: pointer;
 }
 
 .hide img{
@@ -115,24 +123,38 @@ h1 {
 }
 
 .enter-link {
-    color: rgb(0, 255, 60); 
-    font-family: 'script',sans-serif;
+    color: #9aa3ff; 
+    text-decoration: none;
+	font-family: 'Monsieur La Doulaise', cursive;
     font-size: 40px;;
 }
 
 .enter-link:visited {
-    color: rgb(253, 172, 245); 
-    font-family: 'script',sans-serif
+    color: #9aa3ff; 
+    text-decoration: none;
+
+	font-family: 'Monsieur La Doulaise', cursive;
     font-size: 40px;;
+}
+
+
+
+text{
+    text-align: justify;
+    text-justify: inter-word;
+
 }
 
 
 .enter-link:hover {
     color: rgb(0, 76, 255); 
-    font-family: 'script',sans-serif
+    text-decoration: none;
+
+	font-family: 'Monsieur La Doulaise', cursive;
     font-size: 40px;;
 
 }
+
 h1, h2, h3 {
     position: relative;
     z-index: 2; /* Set a higher z-index for the text */
@@ -193,7 +215,7 @@ button{
 }
 
 h3 {
-    font-family: script, sans-serif;
+	font-family: 'Monsieur La Doulaise', cursive;
     font-size: 80px;
     margin: 0; /* Reset margin to remove any default margin */
     padding: 0; /* Reset padding to remove any default padding */
