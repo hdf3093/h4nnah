@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="/4chan.css">
+    <style>
+        .library-container {
+            position: relative;
+            font-family: monospace;
+            white-space: pre;
+            text-align: center;
+            margin: 20px;
+            height: 600px; /* Adjust as needed */
+        }
+
+        .ascii-art {
+            position: relative;
+            z-index: 1;
+        }
+
+        .shelf-image {
+            position: absolute;
+            width: 80px; /* Adjust the size as needed */
+            height: 60px; /* Adjust the size as needed */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Positioning for each shelf image */
+        .shelf-1 { top: 20px; left: 50px; }
+        .shelf-2 { top: 80px; left: 50px; }
+        .shelf-3 { top: 140px; left: 50px; }
+
+        .item-list {
+            margin-top: 220px; /* Adjust to fit below ASCII art */
+        }
+
+        .item-list a {
+            display: block;
+            margin: 5px;
+            text-decoration: none;
+            color: #00f;
+        }
+
+        .item-list a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main class="Main">
+        <div class="Page">
+            <section class="Header Header--board">
+                <nav class="Nav">
+                    <ul class="Nav-list">
+                        <li class="Nav-item"><a href="/lib/" class="Nav-link" title="lib">lib</a></li>
+                        <li class="Nav-item"><a href="/1/" class="Nav-link" title="1">1</a></li>
+                    </ul>
+                    <ul class="Nav-list">
+                        <li class="Nav-item"><a href="/enter/faq/">FAQ</a></li>
+                    </ul>
+                    <ul class="Nav-list">
+                        <li class="Nav-item"><a href="/enter/">Home</a></li>
+                    </ul>
+                </nav>
+                <h1><a href="/lib/">/lib/ - Library</a></h1>
+            </section>
+            <hr>
+            <section class="Thread Thread--full">
+                <div class="Post Post--op">
+                    <div class="Post-body">
+                        <div class="library-container">
+                            <pre class="ascii-art">
+          _____    _____    _____    _____
+         |     |  |     |  |     |  |     |
+         |     |  |     |  |     |  |     |
+         |     |  |     |  |     |  |     |
+         |_____|  |_____|  |_____|  |_____|
+         
+          _____    _____    _____    _____
+         |     |  |     |  |     |  |     |
+         |     |  |     |  |     |  |     |
+         |     |  |     |  |     |  |     |
+         |_____|  |_____|  |_____|  |_____|
+
+          _____    _____    _____    _____
+         |     |  |     |  |     |  |     |
+         |     |  |     |  |     |  |     |
+         |     |  |     |  |     |  |     |
+         |_____|  |_____|  |_____|  |_____|
+
+                             [Library]
+                            </pre>
+                            <div class="shelf-image shelf-1" style="background-image: url('/images/item1.jpg');"></div>
+                            <div class="shelf-image shelf-2" style="background-image: url('/images/item2.jpg');"></div>
+                            <div class="shelf-image shelf-3" style="background-image: url('/images/item3.jpg');"></div>
+                        </div>
+                        <div class="item-list">
+                            <a href="/path/to/item1">Item 1</a> - Description of Item 1
+                            <a href="/path/to/item2">Item 2</a> - Description of Item 2
+                            <a href="/path/to/item3">Item 3</a> - Description of Item 3
+                            <a href="/path/to/item4">Item 4</a> - Description of Item 4
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="/assets/js/main.js?v=1827022981"></script>
+</body>
+</html>
